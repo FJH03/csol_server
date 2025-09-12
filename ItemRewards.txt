@@ -1,0 +1,1208 @@
+// Level Box Rewards
+"Rewards"
+{
+	"2189"
+	{
+		"Items"
+		{
+			"943"
+			{
+			}
+			"944"
+			{
+			}
+			"8084"
+			{
+			}
+			"8085"
+			{
+			}
+			"8167"
+			{
+			}
+
+		}
+	}
+	"2214"
+	{
+		"Select"	"1"
+		"Items"
+		{
+			"703"
+			{
+			}
+			"363"
+			{
+			}
+			"792"
+			{
+			}
+			"556"
+			{
+			}
+			"270"
+			{
+			}
+			"983"
+			{
+			}
+			"899"
+			{
+			}
+			"719"
+			{
+			}
+			"924"
+			{
+			}
+			"769"
+			{
+			}
+			"8193"
+			{
+			}
+			"8119"
+			{
+			}
+			"8118"
+			{
+			}
+			"816"
+			{
+			}
+			"495"
+			{
+			}
+			"752"
+			{
+			}
+			"849"
+			{
+			}
+			"504"
+			{
+			}
+			"768"
+			{
+			}
+			"893"
+			{
+			}
+			"554"
+			{
+			}
+			"776"
+			{
+			}
+			"928"
+			{
+			}
+			"964"
+			{
+			}
+			"969"
+			{
+			}
+			"981"
+			{
+			}
+		}
+	}
+	"1001" // Level 1 Box
+	{
+		"LvlRestriction" "1"
+		"Items"
+		{
+			"1002" // Level 3 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"1" // Dual Elites
+			{
+				"Count" "1"
+				"Duration" "3"
+			}
+			"5" // FiveSeven
+			{
+				"Count" "1"
+				"Duration" "3"
+			}
+			"32" // QBB-95
+			{
+				"Count" "1"
+				"Duration" "3"
+			}
+			"367" // SKULL-5
+			{
+				"Count" "1"
+				"Duration" "3"
+			}
+			"363" // SKULL-9
+			{
+				"Count" "1"
+				"Duration" "3"
+			}
+			"136" // Zombie Mode Item A
+			{
+				"Count" "1"
+				"Duration" "3"
+			}
+			"258" // HP 30%
+			{
+				"Count" "5"
+				"Duration" "0"
+			}
+			"45" // RBC
+			{
+				"Count" "1"
+				"Duration" "3"
+			}
+			"1030" // Point Coupon LV1
+			{
+				"Count" "3"
+				"Duration" "0"
+			}
+		}
+	}
+	"1002" // Level 3 Box
+	{
+		"LvlRestriction" "3"
+		"Items"
+		{
+			"1003" // Level 5 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "3"
+				"Duration" "0"
+			}
+			"24" // M249
+			{
+				"Count" "1"
+				"Duration" "3"
+			}
+			"148" // MG3
+			{
+				"Count" "1"
+				"Duration" "3"
+			}
+			"138" // Zombie Mode Item C
+			{
+				"Count" "1"
+				"Duration" "3"
+			}
+			"258" // HP 30%
+			{
+				"Count" "5"
+				"Duration" "0"
+			}
+			"419" // Lucie
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"1030" // Point Coupon LV1
+			{
+				"Count" "3"
+				"Duration" "0"
+			}
+		}
+	}
+	"1003" // Level 5 Box
+	{
+		"LvlRestriction" "5"
+		"Items"
+		{
+			"1004" // Level 10 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "5"
+				"Duration" "0"
+			}
+			"4" // Desert Eagle
+			{
+				"Count" "1"
+				"Duration" "7"
+			}
+			"37" // MP7A1
+			{
+				"Count" "1"
+				"Duration" "7"
+			}
+			"18" // SG550
+			{
+				"Count" "1"
+				"Duration" "7"
+			}
+			"22" // G3SG1
+			{
+				"Count" "1"
+				"Duration" "7"
+			}
+			"385" // AS50
+			{
+				"Count" "1"
+				"Duration" "7"
+			}
+			"158" // Hunting Dagger
+			{
+				"Count" "1"
+				"Duration" "7"
+			}
+			"136" // Zombie Mode Item A
+			{
+				"Count" "1"
+				"Duration" "7"
+			}
+			"259" // HP 100%
+			{
+				"Count" "5"
+				"Duration" "0"
+			}
+			"418" // Enzo
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"1030" // Point Coupon LV1
+			{
+				"Count" "3"
+				"Duration" "0"
+			}
+		}
+	}
+	"1004" // Level 10 Box
+	{
+		"LvlRestriction" "10"
+		"Items"
+		{
+			"1005" // Level 15 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "10"
+				"Duration" "0"
+			}
+			"47" // NLC
+			{
+				"Count" "1"
+				"Duration" "7"
+			}
+			"55" // Thunder Squad
+			{
+				"Count" "1"
+				"Duration" "7"
+			}
+			"285" // Stamina Drug
+			{
+				"Count" "1"
+				"Duration" "7"
+			}
+			"286" // Power Ampiflier
+			{
+				"Count" "1"
+				"Duration" "7"
+			}
+			"15" // M4A1
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"21" // AK47
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"38" // USAS
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"175" // Heavy Zombie
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"176" // Hammer
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"300" // Round Retry
+			{
+				"Count" "3"
+				"Duration" "0"
+			}
+			"260" // Battle Revival
+			{
+				"Count" "5"
+				"Duration" "0"
+			}
+			"1030" // Point Coupon LV1
+			{
+				"Count" "3"
+				"Duration" "0"
+			}
+		}
+	}
+	"1005" // Level 15 Box
+	{
+		"LvlRestriction" "15"
+		"Items"
+		{
+			"1006" // Level 20 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "15"
+				"Duration" "0"
+			}
+			"187" // SL8
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"159" // AWP Red
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"163" // Light Zombie
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"164" // Nata
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"261" // M79
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"300" // Round Retry
+			{
+				"Count" "3"
+				"Duration" "0"
+			}
+			"260" // Battle Revival
+			{
+				"Count" "5"
+				"Duration" "0"
+			}
+			"46" // VC
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"1030" // Point Coupon LV1
+			{
+				"Count" "3"
+				"Duration" "0"
+			}
+		}
+	}
+	"1006" // Level 20 Box
+	{
+		"LvlRestriction" "20"
+		"Items"
+		{
+			"1007" // Level 25 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "20"
+				"Duration" "0"
+			}
+			"149" // Anaconda
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"397" // M134 Predator
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"197" // M1887
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"417" // AT4CS
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"259" // HP 100%
+			{
+				"Count" "5"
+				"Duration" "0"
+			}
+			"48" // ARA
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"1031" // Point Coupon LV2
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+		}
+	}
+	"1007" // Level 25 Box
+	{
+		"LvlRestriction" "25"
+		"Items"
+		{
+			"1008" // Level 30 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "25"
+				"Duration" "0"
+			}
+			"248" // Combat Knife
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"242" // Infinity 
+			{
+				"Count" "1"
+				"Duration" "10"
+			}
+			"259" // HP 100%
+			{
+				"Count" "10"
+				"Duration" "0"
+			}
+			"285" // Stamina Drug
+			{
+				"Count" "1"
+				"Duration" "15"
+			}
+			"286" // Power Ampiflier
+			{
+				"Count" "1"
+				"Duration" "15"
+			}
+			"288" // Money Extractor
+			{
+				"Count" "1"
+				"Duration" "15"
+			}
+			"287" // Secret Research Fund
+			{
+				"Count" "1"
+				"Duration" "15"
+			}
+			"320" // Infinity Single Black
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"1031" // Point Coupon LV2
+			{
+				"Count" "2"
+				"Duration" "0"
+			}
+		}
+	}
+	"1008" // Level 30 Box
+	{
+		"LvlRestriction" "30"
+		"Items"
+		{
+			"1016" // Level 35 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "30"
+				"Duration" "0"
+			}
+			"282" // MP5 Tiger
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"304" // M14
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"321" // Infinity Single Red
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"259" // HP 100%
+			{
+				"Count" "10"
+				"Duration" "0"
+			}
+			"300" // Round Retry
+			{
+				"Count" "5"
+				"Duration" "0"
+			}
+			"260" // Battle Revival
+			{
+				"Count" "5"
+				"Duration" "0"
+			}
+			"1031" // Point Coupon LV2
+			{
+				"Count" "2"
+				"Duration" "0"
+			}
+		}
+	}
+	"1016" // Level 35 Box
+	{
+		"LvlRestriction" "35"
+		"Items"
+		{
+			"1017" // Level 40 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "35"
+				"Duration" "0"
+			}
+			"373" // Tattoo Chaos
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"163" // Light Zombie
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"164" // Nata
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"175" // Heavy Zombie
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"176" // Hammer
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"56" // Chinese Devils
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"259" // HP 100%
+			{
+				"Count" "10"
+				"Duration" "0"
+			}
+			"300" // Round Retry
+			{
+				"Count" "5"
+				"Duration" "0"
+			}
+			"260" // Battle Revival
+			{
+				"Count" "5"
+				"Duration" "0"
+			}
+			"1031" // Point Coupon LV2
+			{
+				"Count" "2"
+				"Duration" "0"
+			}
+		}
+	}
+	"1017" // Level 40 Box
+	{
+		"LvlRestriction" "40"
+		"Items"
+		{
+			"1018" // Level 45 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "40"
+				"Duration" "0"
+			}
+			"393" // Blair
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"395" // Luger Silver
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"390" // Witch
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"259" // HP 100%
+			{
+				"Count" "20"
+				"Duration" "0"
+			}
+			"300" // Round Retry
+			{
+				"Count" "10"
+				"Duration" "0"
+			}
+			"260" // Battle Revival
+			{
+				"Count" "10"
+				"Duration" "0"
+			}
+			"1031" // Point Coupon LV2
+			{
+				"Count" "3"
+				"Duration" "0"
+			}
+		}
+	}
+	"1018" // Level 45 Box
+	{
+		"LvlRestriction" "45"
+		"Items"
+		{
+			"1019" // Level 50 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "45"
+				"Duration" "0"
+			}
+			"420" // M14 EBR Gold
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"54" // 707
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"392" // Fernando
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"394" // Holy Bomb
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"391" // Stamper
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"259" // HP 100%
+			{
+				"Count" "20"
+				"Duration" "0"
+			}
+			"300" // Round Retry
+			{
+				"Count" "10"
+				"Duration" "0"
+			}
+			"260" // Battle Revival
+			{
+				"Count" "10"
+				"Duration" "0"
+			}
+			"1031" // Point Coupon LV2
+			{
+				"Count" "3"
+				"Duration" "0"
+			}
+		}
+	}
+	"1019" // Level 50 Box
+	{
+		"LvlRestriction" "50"
+		"Items"
+		{
+			"1020" // Level 55 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "50"
+				"Duration" "0"
+			}
+			"285" // Stamina Drug
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"286" // Power Ampiflier
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"288" // Money Extractor
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"287" // Secret Research Fund
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"354" // MG3 Gold
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"246" // AWP Camo
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"279" // M4A1 Dragon
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"280" // AK47 Dragon
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"281" // Knife Dragon
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"254" // David Black
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"1031" // Point Coupon LV2
+			{
+				"Count" "3"
+				"Duration" "0"
+			}
+		}
+	}
+	"1020" // Level 55 Box
+	{
+		"LvlRestriction" "55"
+		"Items"
+		{
+			"1021" // Level 60 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "55"
+				"Duration" "0"
+			}
+			"421" // Catapulta
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"362" // SAF
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"446" // AKM
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"447" // HK416
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"259" // HP 100%
+			{
+				"Count" "20"
+				"Duration" "0"
+			}
+			"300" // Round Retry
+			{
+				"Count" "10"
+				"Duration" "0"
+			}
+			"260" // Battle Revival
+			{
+				"Count" "10"
+				"Duration" "0"
+			}
+			"253" // Gerrard
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"1032" // Point Coupon LV3
+			{
+				"Count" "3"
+				"Duration" "0"
+			}
+		}
+	}
+	"1021" // Level 60 Box
+	{
+		"LvlRestriction" "60"
+		"Items"
+		{
+			"1022" // Level 65 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "60"
+				"Duration" "0"
+			}
+			"355" // M60E4
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"343" // TAR21
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"431" // MK48
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"259" // HP 100%
+			{
+				"Count" "30"
+				"Duration" "0"
+			}
+			"300" // Round Retry
+			{
+				"Count" "20"
+				"Duration" "0"
+			}
+			"260" // Battle Revival
+			{
+				"Count" "20"
+				"Duration" "0"
+			}
+			"136" // Zombie Mode Item A
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"138" // Zombie Mode Item C
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"111" // Damage Display
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"1032" // Point Coupon LV3
+			{
+				"Count" "3"
+				"Duration" "0"
+			}
+		}
+	}
+	"1022" // Level 65 Box
+	{
+		"LvlRestriction" "65"
+		"Items"
+		{
+			"1023" // Level 70 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "65"
+				"Duration" "0"
+			}
+			"8" // XM1014
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"382" // XM2010
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"55" // Thunder Squad
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"259" // HP 100%
+			{
+				"Count" "30"
+				"Duration" "0"
+			}
+			"300" // Round Retry
+			{
+				"Count" "20"
+				"Duration" "0"
+			}
+			"260" // Battle Revival
+			{
+				"Count" "20"
+				"Duration" "0"
+			}
+			"1032" // Point Coupon LV3
+			{
+				"Count" "3"
+				"Duration" "0"
+			}
+		}
+		
+	}
+	"1023" // Level 70 Box
+	{
+		"LvlRestriction" "70"
+		"Items"
+		{
+			"1024" // Level 72 Box
+			{
+				"Count" "1"
+				"Duration" "0"
+			}
+			"173" // Cash Decoder
+			{
+				"Count" "70"
+				"Duration" "0"
+			}
+			"259" // HP 100%
+			{
+				"Count" "50"
+				"Duration" "0"
+			}
+			"300" // Round Retry
+			{
+				"Count" "50"
+				"Duration" "0"
+			}
+			"260" // Battle Revival
+			{
+				"Count" "50"
+				"Duration" "0"
+			}
+			"371" // Luger 
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"434" // STG44 Gold
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"160" // M249 Red
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"237" // Parang
+			{
+				"Count" "1"
+				"Duration" "30"
+			}
+			"212" // M24 Grenade
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"1032" // Point Coupon LV3
+			{
+				"Count" "5"
+				"Duration" "0"
+			}
+		}
+	}
+	"1024" // Level 72 Box
+	{
+		"LvlRestriction" "72"
+		"Items"
+		{
+			"173" // Cash Decoder
+			{
+				"Count" "72"
+				"Duration" "0"
+			}
+			"245" // Dual Infinity Custom
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"270" // Dual Infinity Final
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"383" // Sl8 Custom
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"249" // Master Combat Knife
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"397" // M134 Predator
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"452" // XM1014 Red
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"320" // Infinity Single Black
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"321" // Infinity Single Red
+			{
+				"Count" "1"
+				"Duration" "-1"
+			}
+			"259" // HP 100%
+			{
+				"Count" "100"
+				"Duration" "0"
+			}
+			"300" // Round Retry
+			{
+				"Count" "100"
+				"Duration" "0"
+			}
+			"260" // Battle Revival
+			{
+				"Count" "100"
+				"Duration" "0"
+			}
+			"252" // Zombie Mode Item H
+			{
+				"Count" "1"
+				"Duration" "100"
+			}
+			"138" // Zombie Mode Item C
+			{
+				"Count" "1"
+				"Duration" "100"
+			}
+			"137" // Zombie Mode Item B
+			{
+				"Count" "1"
+				"Duration" "100"
+			}
+			"136" // Zombie Mode Item A
+			{
+				"Count" "1"
+				"Duration" "100"
+			}
+			"1032" // Point Coupon LV3
+			{
+				"Count" "10"
+				"Duration" "0"
+			}
+		}
+	}
+
+	// Level/Exp Coupons
+	"1027" // Exp Coupon LV1
+	{ 
+		"Exp" "500 1000 2000" 
+	} 
+	"1028" // Exp Coupon LV2
+	{ 
+		"Exp" "1000 2000 4000" 
+	} 
+	"1029" // Exp Coupon LV3
+	{ 
+		"Exp" "2000 4000 8000" 
+	} 
+	"1030" // Point Coupon LV1
+	{ 
+		"Points" "250 500 1000" 
+	} 
+	"1031" // Point Coupon LV2
+	{ 
+		"Points" "500 1000 2000" 
+	} 
+	"1032" // Point Coupon LV3 
+	{ 
+		"Points" "1000 2000 4000" 
+	}
+}
+

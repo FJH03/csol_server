@@ -1,0 +1,353 @@
+{
+	"Point" : {
+		"Punish" : 1,
+		"MaxPP": 120,
+		"MinPP": 30,
+		"Default": 100,
+		"Disadvantage": 80,
+		"PlayStart": 15,
+		"BadPoint": 10
+	},
+	"Type" : {
+		// 가점 항목
+		"OnLobby": 1,					// 로비에서 대기
+		"Logoff": 2,						// 로그오프
+		"GoodPlay": 3,					// 세션 중 감점 요인이 없음
+		"PublicRoom": 4,				// 세션 종료 시점에서 25명 이상 플레이 한 비번 없는 방
+		
+		// 감점 항목
+		"NoInput": 5,						// 일정시간동안 입력 없음
+		"NoFireInput": 6,					// 일정시간동안 발사 입력 없음
+		"NoAttackDmg": 7,				// 일정시간동안 입힌 피해 없음
+		"NoTakenDmg": 8,				// 일정시간동안 받은 피해 없음
+		"NoMove": 9,						// 일정시간동안 이동거리 작음
+		"LongInput": 10,					// 한가지 키를 일정시간 이상 입력
+		"KillContinuously": 11,			// 동일한 대상을 연속 사살
+		"DieContinuously": 12,		// 동일한 대상에게 연속 사망
+		"NoMoveKill": 13,				// 동일한 자리에서 연속 사살
+		"NoMoveDeath": 14,			// 동일한 자리에서 연속 사망
+		"PrivateRoom": 15,				// 비밀번호 방에서 플레이
+		"SoloPlay": 16,					// 혼자서 플레이
+		"LittleWeapon": 17,				// 세션에서 사용한 무기가 일정 갯수 이하
+		"LongWeapon": 18,			// 세션에서 하나의 무기가 점유율 과다
+		"SameParty": 19,				// 동일 인원으로 연속 세션 플레이(세션 횟수 당 감점)
+		"SamePartyTime": 20,			// 동일 인원으로 연속 세션 플레이(플레이 시간 당 감점)
+		"NoZombieBossDmg": 21	// 좀시 보스 대미지 0
+	},	
+	"Config": {
+		"__SAMPLE": {		// 타입 이름
+			"Point": 0.1,	// 점수(음수는 감점)
+			"Weight": 1,	// 커브값
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 20, "rate": 0.1 },
+				{ "id": 25, "rate": 0.5 }
+			],
+			"Setting": {}	// 항목 별 추가 옵션
+		},
+		
+		"OnLobby": {
+			"Point": 0.1,
+			"Weight": 1.05,
+			"Setting": {
+				"threshold":  60 // 60초 간격으로 점수 획득
+			}
+		},
+		
+		"Logoff": {
+			"Point": 0.05,
+			"Weight": 1.15,
+			"Setting": {
+				"threshold": 60 // 60초 간격으로 점수 획득
+			}
+		},
+		
+		"GoodPlay": {
+			"Point": 0.1,
+			"Weight": 1.05,
+			"Setting": {
+				"threshold": 4, 			//4 세션 종료 시점에 플레이어 인원 (이상)
+				"threshold2": 1200, 	//1200 초 플레이 한 경우
+				"threshold3": 60			//60 초 간격으로 점수 획득
+			}
+		},
+		
+		"PublicRoom": {
+			"Point": 0.1,
+			"Weight": 1.15,
+			"Setting": {
+				"threshold": 25,			// 25 몇명부터 (세션 종료 시점에 플레이어 인원 (이상)
+				"threshold2": 1200,		//1200 초 플레이한 경우
+				"threshold3" : 60 		// 60 초 간격으로 점수 획득
+			}
+		},
+		
+		"NoInput": {
+			"Point": -0.1,
+			"Weight": 1.5,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 41, "rate": 0 },		//아지트 모드
+				{ "id": 48, "rate": 0 }		//아지트 - 시나리오 모드
+			],
+			"Setting": {
+				"threshold": 180,	//180 첫 시간제한(초)
+				"threshold2": 60 	// 60연속 시간제한(초)
+			}
+		},
+		
+		"NoFireInput": {
+			"Point": -0.1,
+			"Weight": 1.4,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 12, "rate": 0.0 },	// 챌린지 모드
+				{ "id": 39, "rate": 0.3 },	// 스튜디오 플레이 모드
+				{ "id": 49, "rate": 0.5 },	//숨박꼭질 모드
+				{ "id": 37, "rate": 0.5 },	//술래잡기 모드
+				{ "id": 41, "rate": 0 },		//아지트 모드
+				{ "id": 48, "rate": 0 }		//아지트 - 시나리오 모드
+			],
+			"Setting": {
+				"threshold": 180,	//180 첫 시간제한(초)
+				"threshold2": 60 	// 60연속 시간제한(초)
+			}
+		},
+		
+		"NoAttackDmg": {
+			"Point": -0.1,
+			"Weight": 1.3,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 12, "rate": 0 },	// 챌린지 모드
+				{ "id": 38, "rate": 0.3 },	// 스튜디오 창작 모드
+				{ "id": 39, "rate": 0.3 },	//스튜디오 플레이 모드
+				{ "id": 49, "rate": 0.5 },	//숨박꼭질 모드
+				{ "id": 37, "rate": 0.5 },	//술래잡기 모드
+				{ "id": 20, "rate": 0.5 },	//좀비 탈출
+				{ "id": 41, "rate": 0 },		//아지트 모드
+				{ "id": 48, "rate": 0 }		//아지트 - 시나리오 모드
+			],
+			"Setting": {
+				"threshold": 300,			// 첫 시간제한(초)
+				"threshold2": 60 			// 연속 시간제한(초)
+			}
+		},
+		
+		"NoTakenDmg": {
+			"Point": -0.1,
+			"Weight": 1.3,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 12, "rate": 0 },	// 챌린지 모드
+				{ "id": 38, "rate": 0.3 },	// 스튜디오 창작 모드
+				{ "id": 39, "rate": 0.3 },	//스튜디오 플레이 모드
+				{ "id": 49, "rate": 0.5 },	//숨박꼭질 모드
+				{ "id": 37, "rate": 0.5 },	//술래잡기 모드
+				{ "id": 20, "rate": 0.5 },	//좀비 탈출
+				{ "id": 41, "rate": 0 },		//아지트 모드
+				{ "id": 48, "rate": 0 }		//아지트 - 시나리오 모드
+			],
+			"Setting": {
+				"threshold": 300,		//첫 시간제한(초)
+				"threshold2": 60 		// 연속 시간제한(초)
+			}
+		},
+		
+		"NoMove": {
+			"Point": -0.1,
+			"Weight": 1.4,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 41, "rate": 0 },		//아지트 모드
+				{ "id": 48, "rate": 0 }		//아지트 - 시나리오 모드
+			],
+			"Setting": {
+				"threshold": 3,		// 첫 중복 체크 (횟수)
+				"threshold2": 2,		// 연속 체크(횟수)
+				"offset": 30			// 최대 좌표 차이
+			}
+		},
+		
+		"LongInput": {
+			"Point": -0.1,
+			"Weight": 1.5,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 41, "rate": 0 },		//아지트 모드
+				{ "id": 48, "rate": 0 }		//아지트 - 시나리오 모드
+			],
+			"Setting": {
+				"threshold": 60,	// 첫 시간제한(초)
+				"threshold2": 60 	// 연속 시간제한(초)
+			}
+		},
+		
+		"KillContinuously": {
+			"Point": -0.1,
+			"Weight": 1.6,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 41, "rate": 0 },		//아지트 모드
+				{ "id": 48, "rate": 0 },		//아지트 - 시나리오 모드
+				{ "id": 0, "rate": 0.9 },	//오리지널 - 중국 1:1 많이 하는 모드  (라운드 기반이라 Rate 값을 낮게 주지 않음)
+				{ "id": 2, "rate": 0.7 },	//팀데스매치 - 중국 1:1 많이 하는 모드 
+				{ "id": 1, "rate": 0.7 },	//데스매치 - 중국 1:1 많이 하는 모드 
+				{ "id": 22, "rate": 0.7 },	//건데스매치 - 중국 1:1 많이 하는 모드 
+				{ "id": 40, "rate": 0.7 }	//올스타 - 중국 1:1 많이 하는 모드 
+			],
+			"Setting": {
+				"threshold": 10,		// 첫 데스제한(횟수)
+				"threshold2": 1		// 발생 후 데스제한(횟수)
+			}
+		},
+		
+		"DieContinuously": {
+			"Point": -0.1,
+			"Weight": 1.6,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 41, "rate": 0 },	//아지트 모드
+				{ "id": 48, "rate": 0 },		//아지트 - 시나리오 모드
+				{ "id": 0, "rate": 0.9 },	//오리지널 - 중국 1:1 많이 하는 모드  (라운드 기반이라 Rate 값을 낮게 주지 않음)
+				{ "id": 2, "rate": 0.7 },	//팀데스매치 - 중국 1:1 많이 하는 모드 
+				{ "id": 1, "rate": 0.7 },	//데스매치 - 중국 1:1 많이 하는 모드 
+				{ "id": 22, "rate": 0.7 },	//건데스매치 - 중국 1:1 많이 하는 모드 
+				{ "id": 40, "rate": 0.7 }	//올스타 - 중국 1:1 많이 하는 모드 
+			],
+			"Setting": {
+				"threshold": 10,		// 첫 킬제한(횟수)
+				"threshold2": 1		// 발생 후 킬제한(횟수)
+			}
+		},
+		
+		"NoMoveKill": {
+			"Point": -0.1,
+			"Weight": 2,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 41, "rate": 0 },	//아지트 모드
+				{ "id": 48, "rate": 0 }		//아지트 - 시나리오 모드
+			],
+			"Setting": {
+				"threshold": 10,	// 10 첫 킬제한(횟수)
+				"threshold2": 1,	// 발생 후 킬제한(횟수)
+				"offset": 20		// 최대 좌표 차이
+			}
+		},
+		
+		"NoMoveDeath": {
+			"Point": -0.1,
+			"Weight": 1.5,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 41, "rate": 0 },		//아지트 모드
+				{ "id": 48, "rate": 0 }		//아지트 - 시나리오 모드
+			],
+			"Setting": {
+				"threshold": 10,		// 10 첫 사망 제한(횟수)
+				"threshold2": 1,		// 발생 후 사망 제한(횟수)
+				"offset": 50			// 최대 좌표 차이	
+			}
+		},
+		
+		"PrivateRoom": {
+			"Point": -0.05,
+			"Weight": 1.0,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 41, "rate": 0 },		//아지트 모드
+				{ "id": 48, "rate": 0 }		//아지트 - 시나리오 모드
+			],
+			"Setting": {
+				"threshold": 1200,	// 1200 초 부터 
+				"threshold2": 60 		// 초 마다 추가 감점
+			}
+		},
+		
+		"SoloPlay": {
+			"Point": -0.05,
+			"Weight": 1.0,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 41, "rate": 0 },			//아지트 모드
+				{ "id": 48, "rate": 0 }			//아지트 - 시나리오 모드
+			],
+			"Setting": {
+				"threshold": 1200, 	// 1200 초 부터 
+				"threshold2": 60, 	// 초 마다 추가 감점
+				"threshold3" : 2	// 해당 방의 최대 플레이어 설정 체크 (같이 플레이 한 인원이 아님) 보다 작을 경우 감점하지 않음. 
+			}
+		},
+		
+		"LittleWeapon": {
+			"Point": -0.08,
+			"Weight": 1.3,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 12, "rate": 0 },		// 챌린지 모드
+				{ "id": 39, "rate": 0.5 },	//스튜디오 플레이 모드
+				{ "id": 16, "rate": 0 },		//축구
+				{ "id": 28, "rate": 0 },		//쉘터
+				{ "id": 52, "rate": 0 },		//쉘터 스튜디오
+				{ "id": 49, "rate": 0 },		//숨박꼭질 모드
+				{ "id": 37, "rate": 0 },		//술래잡기 모드
+				{ "id": 33, "rate": 0 },		//좀비 사건파일
+				{ "id": 51, "rate": 0 },		//인간 사냥
+				{ "id": 41, "rate": 0 },		//아지트 모드
+				{ "id": 48, "rate": 0 }		//아지트 - 시나리오 모드
+			],
+			"Setting": {
+				"threshold": 4, 			// 4 세션 종료 시점에 플레이어 인원 (이상)
+				"threshold2": 1200, 	// 1200 초 플레이 한 경우
+				"threshold3": 4,			// 4 사용한 무기 총 개수가 이하일 경우
+				"threshold4": 60			// 초 마다 추가 감점
+			}
+		},
+		
+		"LongWeapon": {
+			"Point": -0.1,
+			"Weight": 1.2,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 12, "rate": 0 },		// 챌린지 모드
+				{ "id": 39, "rate": 0.5 },	//스튜디오 플레이 모드
+				{ "id": 16, "rate": 0 },		//축구
+				{ "id": 28, "rate": 0 },		//쉘터
+				{ "id": 52, "rate": 0 },		//쉘터 스튜디오
+				{ "id": 49, "rate": 0 },		//숨박꼭질 모드
+				{ "id": 37, "rate": 0 },		//술래잡기 모드
+				{ "id": 33, "rate": 0 },		//좀비 사건파일
+				{ "id": 41, "rate": 0 },		//아지트 모드
+				{ "id": 48, "rate": 0 }		//아지트 - 시나리오 모드
+			],
+			"Setting": {
+				"threshold": 4, 			// 4 세션 종료 시점에 플레이어 인원 (이상)
+				"threshold2": 1200, 	// 1200 초 플레이 한 경우
+				"threshold3": 80,			// 단일 무기 사용 점유율 (100 == 100%)
+				"threshold4": 60			// 초 마다 추가 감점
+			}
+		},
+		
+		"SameParty": {
+			"Point": -0.5,
+			"Weight": 2,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 41, "rate": 0 },		//아지트 모드
+				{ "id": 48, "rate": 0 }		//아지트 - 시나리오 모드
+			],
+			"Setting": {
+				"threshold": 5,				//5(개발 완료) 몇명부터 - 세션 종료 시점에 플레이어 인원 (이상)
+				"threshold2": 5,				//5(개발 완료) 연속세션 회 부터 감점하여
+				"threshold3": 1200, 		//1200 초 플레이 한 경우
+				"threshold4": 1				// 회 추가로 연속 세션이 있을 때 마다 추가 감점 (1 -> 5, 6, 7...) (2-> 5,7,9...)
+			}
+		},
+		
+		"SamePartyTime": {
+			"Point": -0.2,
+			"Weight": 1.2,
+			"ModeWeight": [	// 모드별 가중치 예외
+				{ "id": 41, "rate": 0 },		//아지트 모드
+				{ "id": 48, "rate": 0 }		//아지트 - 시나리오 모드
+			],
+			"Setting": {
+				"threshold": 60 		// 초 마다 추가 감점 (SameParty 대상)
+			}
+		},
+		
+		"NoZombieBossDmg": {
+			"Point": -3.0,
+			"Weight": 2,
+			"Setting": {
+				"dmg": 0,
+				"threshold": 300 // 초 이상 플레이 한 경우 
+			}
+		}
+	}
+}
