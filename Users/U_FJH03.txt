@@ -1,7 +1,7 @@
-"a123456"
+"FJH03"
 {
 	"UID"		"1"
-	"Password"		"a123456"
+	"Password"		"fjh030303"
 	"FirstLoginTime"		"26982966"
 	"LastLoginTime"		"29294973"
 	"GameName"		"FJH_03"
