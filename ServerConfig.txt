@@ -9,7 +9,7 @@
 	"DbVersion"		"1086"
 	"RestartOnCrash"		"0"
 	"InventorySlotMax"		"3000"
-	"NextUserID"		"2"
+	"NextUserID"		"3"
 	"DefaultUser"
 	{
 		"GameMaster"		"99"
