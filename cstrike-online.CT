@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="38">
+  <Forms>
+    <UDF1 Class="TCEForm" Encoding="Ascii85">3u0hk2nldAU:MM2b.}cxWeIh0Gi32eO*Fu{W?Ph7%{mcIVgALy9FkwaRL(ZnnNpGg/gz.[7L.V;:dpp6@SY!KXQt/cWag#?1b8x4FfafB</UDF1>
+    <UDF2 Class="TCEForm" Encoding="Ascii85">3u0hk2nldAU:MM2b.}cxWeIh0Gh+;cO*Fu{W?Ph7%{mcIVgALy9FkwaRL(ZnnNpGg/gz.[7L.V;:dpp6@SY!KXQt/cWag#?1b8x4FfafB</UDF2>
+  </Forms>
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"DNS模式木头与铁不减少"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+aobscanmodule(INJECT, mp.dll, 29 84 8E C8 14 00 00)
+
+alloc(newmem,2048)
+label(returnhere)
+label(originalcode)
+label(exit)
+
+assert(INJECT, 29 84 8E C8 14 00 00)
+
+newmem: //this is allocated memory, you have read,write,execute access
+//place your code here
+jmp exit
+
+originalcode:
+sub [esi+ecx*4+000014C8],eax
+
+exit:
+jmp returnhere
+
+"mp.dll"+54A595:
+jmp newmem
+nop 2
+returnhere:
+
+[DISABLE]
+INJECT:
+  db 29 84 8E C8 14 00 00 // 原始字节: sub [esi+ecx*4+000014C8], eax
+
+dealloc(newmem)
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"金钱数量"</Description>
+      <LastState Value="0" RealAddress="3B7CD170"/>
+      <VariableType>Float</VariableType>
+      <Address>"mp.dll"+0179B71C</Address>
+      <Offsets>
+        <Offset>C88</Offset>
+        <Offset>80</Offset>
+        <Offset>2B4</Offset>
+        <Offset>4</Offset>
+        <Offset>8</Offset>
+        <Offset>288</Offset>
+      </Offsets>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
